@@ -1,11 +1,13 @@
 package ru.ilyamnl
 
 interface RoomManager {
-    fun addRoom()
 
-    fun delRoom()
+    fun addRoom(room: Room)
 
-    fun findRoom()
+    fun delRoom(room: Room)
+
+    fun findRoom(roomId: String): Room?
+
 }
 
 interface BookingManager {
@@ -22,17 +24,17 @@ interface BookingManager {
 
 interface StockManager {
 
-    fun addEquipment()
+    fun addEquipment(equipment: Equipment)
 
-    fun delEquipment()
+    fun delEquipment(equipment: Equipment)
 
-    fun findByType()
+    fun findByType(type: EquipmentType): Equipment?
 
-    fun findByName()
+    fun findByName(name: String): Equipment?
 
-    fun giveEquipToRoom()
+    fun giveEquipToRoom(room: Room, equipment: Equipment)
 
-    fun pickUpEquipFromRoom()
+    fun pickUpEquipFromRoom(room: Room, equipment: Equipment)
 
 }
 
