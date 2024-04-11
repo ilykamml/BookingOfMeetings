@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59cb56e3-0749-43af-ac49-e3786867df94" name="Changes" comment="Initial commit&#10;the simplest blocks of code have been written">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/MeetingRoomFacade.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Booking.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/BookingManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/EquipmentType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Room.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RoomManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RoomManagerImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/StockManager.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DataClasses.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/DontKnowWhyItsHere.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Equipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Equipment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Recorder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MeetingRoomFacade.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MeetingRoomFacade.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +46,12 @@
     &quot;assignee&quot;: &quot;ilykamml&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ilykamml/BookingOfMeetings&quot;,
-    &quot;accountId&quot;: &quot;1831d2cd-5776-4f77-b422-05752bd74928&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ilykamml/BookingOfMeetings.git",
+    "accountId": "5e541ffd-981f-4b34-9aad-8d916fff4db3"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -54,34 +61,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build BookingOfMeetings.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DataClassesKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Developing/BookingOfMeetings/src/main/kotlin/Main.kt&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build BookingOfMeetings.executor": "Run",
+    "Kotlin.DataClassesKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/Developing/BookingOfMeetings/src/main/kotlin/Main.kt",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\Ilya\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "/Users/ilyamml/.gradle"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="DataClassesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.ilyamnl.DataClassesKt" />
+    <configuration name="DontKnowWhyItsHereKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilyamnl.DontKnowWhyItsHereKt" />
       <module name="BookingOfMeetings.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,7 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DataClassesKt" />
+        <item itemvalue="Kotlin.DontKnowWhyItsHereKt" />
       </list>
     </recent_temporary>
   </component>
@@ -116,6 +128,7 @@
       <workItem from="1712593024550" duration="2147000" />
       <workItem from="1712662773882" duration="3000" />
       <workItem from="1712853173367" duration="128000" />
+      <workItem from="1712870897697" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;the simplest blocks of code have been written">
       <option name="closed" value="true" />

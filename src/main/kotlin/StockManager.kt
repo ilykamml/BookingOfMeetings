@@ -1,27 +1,5 @@
 package ru.ilyamnl
 
-interface RoomManager {
-
-    fun addRoom(room: Room)
-
-    fun delRoom(room: Room)
-
-    fun findRoom(roomId: String): Room?
-
-}
-
-interface BookingManager {
-
-    fun createBooking()
-
-    fun cancelBooking()
-
-    fun findBooking()
-
-    fun checkRoomOccupancy()
-
-}
-
 interface StockManager {
 
     fun addEquipment(equipment: Equipment)
@@ -35,13 +13,5 @@ interface StockManager {
     fun giveEquipToRoom(room: Room, equipment: Equipment)
 
     fun pickUpEquipFromRoom(room: Room, equipment: Equipment)
-
-}
-
-interface Recorder {
-
-    fun writeToFile()
-
-    fun loadFromFile()
 
 }
