@@ -4,11 +4,11 @@ import java.time.LocalDateTime
 
 interface BookingManager {
 
-    fun createBooking(room: Room, startTime: LocalDateTime, endTime: LocalDateTime)
+    fun createBooking(room: Room, employeeName: String, startTime: LocalDateTime, endTime: LocalDateTime)
 
-    fun cancelBooking(bookingId: String)
+    fun cancelBooking(bookingId: Int)
 
-    fun findBooking(bookingId: String): Booking?
+    fun findBooking(bookingId: Int): Booking?
 
     fun checkRoomOccupancy(roomID: String, startTime: LocalDateTime, endTime: LocalDateTime): Boolean
 

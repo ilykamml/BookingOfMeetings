@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59cb56e3-0749-43af-ac49-e3786867df94" name="Changes" comment="Initial commit&#10;the simplest blocks of code have been written">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Booking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/BookingManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/EquipmentType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Room.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RoomManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RoomManagerImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/StockManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/BookingManagerImplTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DataClasses.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/DontKnowWhyItsHere.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Equipment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Equipment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Recorder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MeetingRoomFacade.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MeetingRoomFacade.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BookingManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BookingManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BookingManagerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BookingManagerImpl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +25,7 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,12 +38,12 @@
     &quot;assignee&quot;: &quot;ilykamml&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ilykamml/BookingOfMeetings.git",
-    "accountId": "5e541ffd-981f-4b34-9aad-8d916fff4db3"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ilykamml/BookingOfMeetings&quot;,
+    &quot;accountId&quot;: &quot;1831d2cd-5776-4f77-b422-05752bd74928&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -64,10 +56,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build BookingOfMeetings.executor": "Run",
+    "Kotlin.BookingManagerImplKt.executor": "Run",
     "Kotlin.DataClassesKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -82,18 +77,28 @@
   },
   "keyToStringList": {
     "kotlin-gradle-user-dirs": [
-      "/Users/ilyamml/.gradle"
+      "C:\\Users\\Ilya\\.gradle"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="DontKnowWhyItsHereKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.ilyamnl.DontKnowWhyItsHereKt" />
+  <component name="RunManager" selected="Kotlin.BookingManagerImplKt">
+    <configuration name="BookingManagerImplKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilyamnl.BookingManagerImplKt" />
+      <module name="BookingOfMeetings.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataClassesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilyamnl.DataClassesKt" />
       <module name="BookingOfMeetings.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,7 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DontKnowWhyItsHereKt" />
+        <item itemvalue="Kotlin.BookingManagerImplKt" />
+        <item itemvalue="Kotlin.DataClassesKt" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +134,6 @@
       <workItem from="1712593024550" duration="2147000" />
       <workItem from="1712662773882" duration="3000" />
       <workItem from="1712853173367" duration="128000" />
-      <workItem from="1712870897697" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;the simplest blocks of code have been written">
       <option name="closed" value="true" />
